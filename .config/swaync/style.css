@@ -2,7 +2,7 @@
 @define-color mpris-album-art-overlay alpha(@background, 0.55);
 @define-color mpris-button-hover alpha(@background, 0.50);
 @define-color text @color15;
-@define-color bg alpha(@background,.5);
+@define-color bg alpha(@background,.51);
 @define-color bg-hover alpha(@background,.8);
 @define-color mycolor @color9;
 @define-color border-color alpha(@mycolor, 0.15);
@@ -29,9 +29,8 @@
 .floating-notifications .notification-row .notification-background .notification,
 .floating-notifications.background .notification-background .notification .notification-content {
 }
-.notification{
-    background: alpha(@mycolor,.5);
-
+.notification {
+    background: @bg-hover;
 }
 
 .control-center .notification-row .notification-background .notification {
@@ -167,6 +166,11 @@
 
 }
 
+.notification-group {
+  background-color: transparent;
+  outline: none;
+}
+
 .control-center {
     background: @bg;
     color: @text;
@@ -216,22 +220,13 @@
 .widget-mpris {
 }
 .widget-mpris .widget-mpris-player {
-    padding: 16px;
+    padding: 0;
     margin: 16px 20px;
     background-color: @mpris-album-art-overlay;
     border-radius: 12px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .65);
 }
-.widget-mpris .widget-mpris-player button:hover {
-    all: unset;
-    background: @bg-hover;
-    text-shadow: none;
-    border-radius: 15px;
-    border: none; 
-    padding: 5px; 
-    margin: 5px;
-    transition: all 0.5s ease; 
-}
+
 .widget-mpris .widget-mpris-player button {
     color:@text;
     text-shadow: none;
@@ -240,13 +235,6 @@
     padding: 5px;
     margin: 5px;
     transition: all 0.5s ease;
-}
-.widget-mpris .widget-mpris-player button:not(.selected) {
-    background: transparent;
-    border: 2px solid transparent;
-}
-.widget-mpris .widget-mpris-player button:hover {
-    border: 2px solid transparent;
 }
 
 .widget-mpris .widget-mpris-player .widget-mpris-album-art {
@@ -276,6 +264,9 @@
     background:transparent;
 }
 
+.widget-buttons-grid flowbox flowboxchild {
+	background: transparent;
+}
 .widget-buttons-grid>flowbox>flowboxchild>button label {
     font-size: 20px;
     color: @color7;
@@ -339,9 +330,11 @@ trough highlight:hover {
 
 trough slider {
     background: transparent;
+    box-shadow: none;
 }
 trough slider:hover {
     background: transparent;
+    box-shadow: none;
 }
 
 .widget-volume {

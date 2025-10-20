@@ -103,6 +103,9 @@ tooltip {
 #workspaces button.empty.active:hover{
     background: @color2;
 }
+#language {
+    color: #91939C;
+}
 #bluetooth{
     padding: 0px 5px;
     transition: all .3s ease;
@@ -119,8 +122,7 @@ tooltip {
     padding: 0px 5px;
     transition: all .3s ease;
     color:@color7;
-
-
+    background: transparent;
 }
 #battery.charging {
     color: #26A65B;

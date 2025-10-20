@@ -54,7 +54,8 @@
             "label": "󰕾 "
         },
         "backlight": {
-            "label": "󰃟 "
+            "label": "󰃟 ",
+            "device": "nvidia_0"
         },
         "buttons-grid": {
             "actions": [

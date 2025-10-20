@@ -4,7 +4,7 @@
         "reload_style_on_change": true,
         "modules-left": ["custom/notification","clock","custom/pacman","tray"],
         "modules-center": ["hyprland/workspaces"],
-        "modules-right": ["group/expand","bluetooth","network","battery"],
+        "modules-right": ["group/expand","hyprland/language","bluetooth","network","battery"],
 
 
         "hyprland/workspaces": {
@@ -46,6 +46,11 @@
             "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
             "tooltip-format-ethernet": "{ifname} 🖧 ",
             "on-click": "kitty nmtui"
+        },
+        "hyprland/language": {
+            "format": "{}",
+            "format-en": " us ",
+            "format-ru": " ru "
         },
         "bluetooth": {
             "format-on": "󰂯",
