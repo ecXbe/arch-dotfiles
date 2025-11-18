@@ -1,0 +1,67 @@
+
+# List of absolutely essential packages - DO NOT MODIFY unless absolutely necessary!
+# Removing or modifying packages may break fundamental features.
+required_packages=(
+    python-pywal16
+    swww
+    waybar
+    swaync
+    starship
+    myfetch
+    neovim
+    python-pywalfox
+    hypridle
+    hyprpicker
+    hyprshot
+    hyprlock
+    pacman-contrib
+    pyprland
+    wlogout
+    brightnessctl
+    nerd-fonts
+    noto-fonts-emoji
+    ttf-jetbrains-mono
+    nwg-look
+    bibata-cursor-theme
+    thunar
+    gvfs
+    tumbler
+    htop
+    blueman
+    bluez
+    pipewire
+    pipewire-pulse
+    pipewire-alsa
+    pipewire-jack
+    pavucontrol
+    gnome-network-displays
+    gst-plugins-bad
+)
+
+# Packages at discretion
+optional_packages=(
+
+    # Additional functionality for customization
+    fd
+    cava
+    clock-rs-git
+    eza
+    
+    # Tools
+    libreoffice-fresh
+    libreoffice-fresh-ru
+
+    # Games
+    steam
+    ttf-dejavu
+    ttf-liberation
+
+    # Communication
+    teamspeak3
+    telegram-desktop
+    discord
+
+    # IDE's
+    rider
+    webstorm
+)

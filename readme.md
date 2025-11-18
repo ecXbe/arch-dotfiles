@@ -23,7 +23,7 @@
 
   ```
   cd && git clone https://github.com/ecXbe/arch-dotfiles.git
-  cd ~/arch-dotfiles
+  cd ~/arch-dotfiles/installer
   chmod +x install.sh
   ./install.sh
   ```  

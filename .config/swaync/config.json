@@ -27,6 +27,8 @@
     "hide-on-clear": false,
     "hide-on-action": true,
     "script-fail-notify": true,
+    "notification-2fa-action": false,
+    "notification-inline-replies": false,
     "widgets": [
         "mpris",
         "title",
