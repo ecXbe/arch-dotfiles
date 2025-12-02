@@ -22,7 +22,7 @@
   <summary>Arch Install Script</summary>
 
   ```
-  cd && git clone https://github.com/ecXbe/arch-dotfiles.git
+  cd && git clone --depth 1 https://github.com/ecXbe/arch-dotfiles.git
   cd ~/arch-dotfiles/installer
   chmod +x install.sh
   ./install.sh

@@ -10,15 +10,15 @@ clear
 
 sudo pacman -Syu
 
-if ! command -v yay &> /dev/null; then
-    git clone https://aur.archlinux.org/yay.git /tmp/yay
-    cd /tmp/yay
+if ! command -v paru &> /dev/null; then
+    git clone https://aur.archlinux.org/paru.git /tmp/paru
+    cd /tmp/paru
     makepkg -si --noconfirm
     cd ~
-    rm -rf /tmp/yay
+    rm -rf /tmp/paru
 fi
 
-yay -S --needed --noconfirm --removemake "${required_packages[@]}" "${optional_packages[@]}"
+paru -Syu --needed --removemake --skipreview --norebuild "${required_packages[@]}" "${optional_packages[@]}"
 
 systemctl enable bluetooth
 
@@ -31,7 +31,7 @@ wal -i ~/arch-dotfiles/wallpapers/pywallpaper.jpg -n
 
 cp -a ~/arch-dotfiles/wallpapers ~/
 cp -a ~/arch-dotfiles/.config/* ~/.config/
-cp -a ~/arch-dotfiles/.themes/* ~/.themes/
+mkdir -p ~/.themes && cp -a ~/arch-dotfiles/.themes/* ~/.themes/
 cp -a ~/arch-dotfiles/.bashrc ~/
 
 echo

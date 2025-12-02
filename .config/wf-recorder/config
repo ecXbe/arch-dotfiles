@@ -1,0 +1,5 @@
+dir="$(xdg-user-dir VIDEOS)/Screencasts"
+
+use_mic="false"
+video_codec="libx264"
+audio_codec="libopus"

@@ -13,6 +13,7 @@ required_packages=(
     hypridle
     hyprpicker
     hyprshot
+    wofi-calc
     wf-recorder
     hyprlock
     pacman-contrib
@@ -27,7 +28,7 @@ required_packages=(
     thunar
     gvfs
     tumbler
-    htop
+    btop
     blueman
     bluez
     pipewire
@@ -35,6 +36,7 @@ required_packages=(
     pipewire-alsa
     pipewire-jack
     pavucontrol
+    gnome-keyring
     gnome-network-displays
     gst-plugins-bad
 )
@@ -43,10 +45,14 @@ required_packages=(
 optional_packages=(
 
     # Additional functionality for customization
-    fd
     cava
     clock-rs-git
+
+    # Utility
+    fd
     eza
+    7zip
+    mpv
     
     # Tools
     libreoffice-fresh
@@ -61,8 +67,4 @@ optional_packages=(
     teamspeak3
     telegram-desktop
     discord
-
-    # IDE's
-    rider
-    webstorm
 )
