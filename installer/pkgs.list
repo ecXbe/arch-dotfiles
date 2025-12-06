@@ -36,6 +36,7 @@ required_packages=(
     pipewire-alsa
     pipewire-jack
     pavucontrol
+    pulsemixer
     gnome-keyring
     gnome-network-displays
     gst-plugins-bad
