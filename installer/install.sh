@@ -19,6 +19,7 @@ if ! command -v paru &> /dev/null; then
 fi
 
 paru -Syu --needed --removemake --skipreview --norebuild "${required_packages[@]}" "${optional_packages[@]}"
+paru -R dolphin
 
 systemctl enable bluetooth
 
@@ -26,6 +27,9 @@ systemctl --user enable pipewire.service
 systemctl --user enable pipewire-pulse.service
 systemctl --user start pipewire.service
 systemctl --user start pipewire-pulse.service
+if pacman -Qi power-profiles-daemon &>/dev/null; then
+    sudo systemctl enable --now power-profiles-daemon
+fi
 
 wal -i ~/arch-dotfiles/wallpapers/pywallpaper.jpg -n
 

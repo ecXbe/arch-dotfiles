@@ -7,7 +7,7 @@ required_packages=(
     waybar
     swaync
     starship
-    myfetch
+    nitchrevived-bin
     neovim
     python-pywalfox
     hypridle
@@ -54,6 +54,7 @@ optional_packages=(
     eza
     7zip
     mpv
+    power-profiles-daemon
     
     # Tools
     libreoffice-fresh

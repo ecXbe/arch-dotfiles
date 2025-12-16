@@ -1,5 +1,5 @@
 # ~/.bashrc
-clear && myfetch -c 8 -C " █"
+clear && nitchrevived
 eval "$(starship init bash)"
 [[ $- != *i* ]] && return
 alias lsd='eza --icons'
