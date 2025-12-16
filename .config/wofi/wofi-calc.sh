@@ -3,7 +3,6 @@
 wofi() {
     command wofi -n "$@"
 }
-
 export -f wofi
 
-exec wofi-calc "$@"
+(qalc -e &) ; exec wofi-calc "$@"
