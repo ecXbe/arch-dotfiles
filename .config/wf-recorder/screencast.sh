@@ -26,8 +26,13 @@ else
     filename="$dir/$(date '+%Y-%m-%d_%H-%M-%S').mp4"
     audio_output=""
 
-    if [[ "$use_mic" == "true" ]] then
-        audio_output=$(pactl get-default-source)
+    if [[ "$use_mic" == "true" ]]; then
+        if ! pactl get-sink-volume Combined >/dev/null 2>&1; then
+            pactl load-module module-null-sink sink_name=Combined
+            pactl load-module module-loopback sink=Combined source=@DEFAULT_SINK@.monitor
+            pactl load-module module-loopback sink=Combined source=@DEFAULT_SOURCE@
+        fi
+        audio_output="Combined.monitor"
     else
         audio_output=$(pactl get-default-sink).monitor 
     fi 
