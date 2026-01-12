@@ -3,7 +3,7 @@
     <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=36&pause=1000&color=1793D1&center=true&vCenter=true&width=450&height=150&lines=ec%E2%95%B3be+Dotfiles">
   </span>
   <h1>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Arch_Linux_%22Crystal%22_icon.svg/800px-Arch_Linux_%22Crystal%22_icon.svg.png?20230812231250" width="25" height="25">&hairsp;rch Linux
+    <img src="https://i.imgur.com/caioXqo.png" width="25" height="25">&hairsp;rch Linux
   </h1>
 </div>
 
