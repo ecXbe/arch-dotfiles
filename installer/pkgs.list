@@ -2,6 +2,7 @@
 # List of absolutely essential packages - DO NOT MODIFY unless absolutely necessary!
 # Removing or modifying packages may break fundamental features.
 required_packages=(
+    zsh
     python-pywal16
     swww
     waybar

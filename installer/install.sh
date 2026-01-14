@@ -36,7 +36,12 @@ wal -i ~/arch-dotfiles/wallpapers/pywallpaper.jpg -n
 cp -a ~/arch-dotfiles/wallpapers ~/
 cp -a ~/arch-dotfiles/.config/* ~/.config/
 mkdir -p ~/.themes && cp -a ~/arch-dotfiles/.themes/* ~/.themes/
-cp -a ~/arch-dotfiles/.bashrc ~/
+cp -a ~/arch-dotfiles/.zshrc ~/
+
+if [ "$SHELL" != "/usr/bin/zsh" ]; then
+    sudo chsh -s "/usr/bin/zsh" "$USER"
+    git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/plugins/zsh-autosuggestions
+fi
 
 echo
 echo "Installation was completed successfully"
