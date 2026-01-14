@@ -24,6 +24,7 @@ if pgrep -x wf-recorder > /dev/null; then
     if [ "$response" = "default" ]; then xdg-open "$dir"; fi
 else
     filename="$dir/$(date '+%Y-%m-%d_%H-%M-%S').mp4"
+    output=$(hyprctl monitors -j | jq -r '.[] | select(.focused == true).name') 
     audio_output=""
 
     if [[ "$use_mic" == "true" ]]; then
@@ -37,7 +38,7 @@ else
         audio_output=$(pactl get-default-sink).monitor 
     fi 
 
-    wf-recorder -f "$filename" -c "$video_codec" -C "$audio_codec" --audio="$audio_output" &
+    wf-recorder -o "$output" -f "$filename" -c "$video_codec" -C "$audio_codec" --audio="$audio_output" &
     
     sleep 0.5
     if pgrep -x wf-recorder > /dev/null; then
