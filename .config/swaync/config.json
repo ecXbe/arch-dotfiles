@@ -101,11 +101,6 @@
                     
                 },
                 {
-                    "label": "",
-                    "command": "kitty bash -i -c 'tasks'"
-
-                },
-                {
                     "label": "",
                     "command": "hyprlock"
                 },
