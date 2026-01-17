@@ -13,7 +13,7 @@ compinit -u
 alias lsd='eza --icons'
 alias pacup='sudo pacman -Rns $(pacman -Qdtq)'
 alias fonts='fc-list -f "%{family}\n"'
-alias Docs="cd ~/Documents && nvim"
+alias Docs='cd "$(xdg-user-dir DOCUMENTS)" && nvim'
 alias Settings="cd ~/.config/hypr && nvim"
 alias untar="tar -xf"
 alias n="nvim"
